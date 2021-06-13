@@ -71,7 +71,7 @@ def get_from_cloud(_cloud: Clouds, options: dict):
         save_to = options.pop('save_to', None)
         cloud = {
             'i': _cloud.download(save_to, **options),
-            'is_tmp': True if save_to is None else False
+            'is_tmp': save_to is None
         }
 
     return cloud
