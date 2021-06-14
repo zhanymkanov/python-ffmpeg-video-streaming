@@ -74,6 +74,9 @@ def get_from_cloud(_cloud: Clouds, options: dict):
             'is_tmp': save_to is None
         }
 
+    print("cloud")
+    print(cloud)
+
     return cloud
 
 

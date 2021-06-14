@@ -70,6 +70,9 @@ class S3(Clouds):
         if bucket_name is None or key is None:
             raise ValueError('You should pass a bucket and key name')
 
+        print("filename in cloud")
+        print(f"{filename=}")
+
         if filename is None:
             filename = tempfile.NamedTemporaryFile(prefix=basename(key), delete=False)
         else:
